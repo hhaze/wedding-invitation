@@ -6,6 +6,7 @@ import {Calendar} from '../components/calendar'
 import {Location} from '../components/location'
 import {Banking} from '../components/banking'
 import {Rsvp} from '../components/rsvp'
+import {Photo} from '../components/photo'
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <span>로얄호텔서울 3층 그랜드 볼룸</span>
       </div>
       <Phrase/>
+      <Photo/>
       <Calendar/>
       <Location/>
       <Banking/>

@@ -1,8 +1,8 @@
 import React, {FunctionComponent} from 'react'
 
-export const Phrase: FunctionComponent = props => {
+export const Phrase: FunctionComponent = () => {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <>
       <div className='text-xl text-rose-300 font-bold py-6'>
         소중한 분들을 초대합니다.
       </div>
@@ -28,6 +28,6 @@ export const Phrase: FunctionComponent = props => {
           <span className='px-1 font-bold'>지혜</span>
         </div>
       </div>
-    </div>
+    </>
   )
 }

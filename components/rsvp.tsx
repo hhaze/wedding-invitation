@@ -1,8 +1,8 @@
 import React, {FunctionComponent} from 'react'
 
-export const Rsvp: FunctionComponent = props => {
+export const Rsvp: FunctionComponent = () => {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='py-6'>
       참석 여부 확인
     </div>
   )
