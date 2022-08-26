@@ -1,9 +1,14 @@
 import React, {FunctionComponent} from 'react'
+import Image from 'next/image'
 
 export const Calendar: FunctionComponent = () => {
   return (
     <>
-      달력 자리
+      <Image
+        src='/calendar.jpg'
+        width={500}
+        height={500}
+      />
     </>
   )
 }
