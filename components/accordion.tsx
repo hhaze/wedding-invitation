@@ -1,6 +1,7 @@
 import React, {FunctionComponent, useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
+import {ToastCopy} from "./ToastCopy";
 
 export const Accordion: FunctionComponent = () => {
   const [groomShow, setGroomShow] = useState(false)
@@ -23,9 +24,9 @@ export const Accordion: FunctionComponent = () => {
       </div>
       {groomShow && (
         <div className=''>
-          <div>신랑 아버지 123-456-789</div>
-          <div>신랑 어머니 123-456-789</div>
-          <div>신랑 123-456-789</div>
+          <ToastCopy text="0000-0004">신랑 아버지 123-456-789</ToastCopy>
+          <ToastCopy text="0000-0005">신랑 어머니 123-456-789</ToastCopy>
+          <ToastCopy text="0000-0006">신랑 123-456-789</ToastCopy>
         </div>
       )}
       <div className='bride-header pt-2' onClick={handleBrideOpen}>
@@ -41,9 +42,9 @@ export const Accordion: FunctionComponent = () => {
       </div>
       {brideShow && (
         <div className=''>
-          <div>신부 아버지 123-456-789</div>
-          <div>신부 어머니 123-456-789</div>
-          <div>신부 123-456-789</div>
+          <ToastCopy text="0000-0001">신부 아버지 123-456-789</ToastCopy>
+          <ToastCopy text="0000-0002">신부 어머니 123-456-789</ToastCopy>
+          <ToastCopy text="0000-0003">신부 123-456-789</ToastCopy>
         </div>
       )}
     </>
