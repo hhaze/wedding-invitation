@@ -1,6 +1,7 @@
 import React, {FunctionComponent, useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
+import {Copy} from "./Copy";
 
 export const Accordion: FunctionComponent = () => {
   const [groomShow, setGroomShow] = useState(false)
@@ -43,7 +44,7 @@ export const Accordion: FunctionComponent = () => {
         <div className=''>
           <div>신부 아버지 123-456-789</div>
           <div>신부 어머니 123-456-789</div>
-          <div>신부 123-456-789</div>
+          <Copy text="123-456-789">신부 123-456-789</Copy>
         </div>
       )}
     </>
