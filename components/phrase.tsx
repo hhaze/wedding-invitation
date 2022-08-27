@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const Phrase: FunctionComponent = () => {
   return (
     <>
-      <div className='text-xl text-rose-300 font-bold'>
+      <div className='text-center text-xl text-rose-300 font-bold'>
         소중한 분들을 초대합니다.
       </div>
       {/*<div className='flex flex-col items-center text-base'>*/}

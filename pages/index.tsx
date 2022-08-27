@@ -5,17 +5,15 @@ import {Phrase} from '../components/phrase'
 import {Calendar} from '../components/calendar'
 import {Location} from '../components/location'
 import {Banking} from '../components/banking'
-import {Rsvp} from '../components/rsvp'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className='flex flex-col items-center justify-center m-4'>
       <Title/>
       <Phrase/>
       <Calendar/>
       <Location/>
       <Banking/>
-      <Rsvp/>
     </div>
   )
 }
