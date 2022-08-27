@@ -3,12 +3,8 @@ import Image from 'next/image'
 
 export const Location: FunctionComponent = () => {
   return (
-    <>
-      <Image
-        src='/royal_location.png'
-        width={500}
-        height={400}
-      />
+    <div className='py-20'>
+      <Image src='/royal_location.png' width={400} height={300}/>
       <div className='w-500 p-2'>
         <div className='text-sm text-left py-2'>
           <div className='font-bold text-lg'>🚇 지하철</div>
@@ -35,6 +31,6 @@ export const Location: FunctionComponent = () => {
           <div>서울특별시 중구 명동길 61 / T. 02-756-1112</div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

@@ -4,11 +4,7 @@ import Image from 'next/image'
 export const Calendar: FunctionComponent = () => {
   return (
     <>
-      <Image
-        src='/calendar.jpg'
-        width={500}
-        height={500}
-      />
+      <Image src='/calendar.jpg' width={400} height={400}/>
     </>
   )
 }

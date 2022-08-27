@@ -12,7 +12,7 @@ export const Title: FunctionComponent = () => {
         width={400}
         height={600}
       />
-      <div className='flex flex-col items-center py-8 text-lg'>
+      <div className='flex flex-col items-center pt-8 pb-20 text-lg'>
         <span>2022년 09월 24일 토요일 낮 12시</span>
         <span>로얄호텔서울 3층 그랜드 볼룸</span>
       </div>

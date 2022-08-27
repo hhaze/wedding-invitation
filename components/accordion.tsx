@@ -10,7 +10,7 @@ export const Accordion: FunctionComponent = () => {
   const handleBrideOpen = () => setBrideShow(!brideShow)
 
   return (
-    <>
+    <div className='pb-8'>
       <div className='pb-2' onClick={handleGroomOpen}>
         <div className='w-full rounded-lg bg-rose-200 px-8 py-4 items-center'>
           <button>신랑측 계좌번호</button>
@@ -77,6 +77,6 @@ export const Accordion: FunctionComponent = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }
