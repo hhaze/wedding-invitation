@@ -10,10 +10,36 @@ export const Location: FunctionComponent = () => {
       <Image src='/royal_location.png' width={400} height={300}/>
       <div className='text-sm text-left py-2'>
         <div className='font-bold text-lg'>주소</div>
-        <ColoredToastCopy text="서울특별시 중구 명동길 61">서울특별시 중구 명동길 61</ColoredToastCopy>
-        <Border2>
-          <a href="tel:02-756-1112">02-756-1112</a>
-        </Border2>
+        서울특별시 중구 명동길 61
+        <div>
+          <ColoredToastCopy text="서울특별시 중구 명동길 61">
+            주소 복사 하기
+          </ColoredToastCopy>
+          <a
+            href="https://naver.me/GpJxzduT"
+            target="_blank"
+          >
+            <Border2>
+              네이버지도
+            </Border2>
+          </a>
+          <a
+            href="https://map.kakao.com/?urlX=496821&urlY=1129084&urlLevel=3&itemId=17135751&q=서울로얄호텔%20그랜드볼룸&srcid=17135751&map_type=TYPE_MAP"
+            target="_blank"
+          >
+            <Border2>
+              카카오맵
+            </Border2>
+          </a>
+        </div>
+        <div>
+          02-756-1112
+        </div>
+        <a href="tel:02-756-1112">
+          <Border2>
+            전화걸기
+          </Border2>
+        </a>
       </div>
       <div className='text-sm text-left py-2'>
         <div className='font-bold text-lg'>🚇 지하철</div>
