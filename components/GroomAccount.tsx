@@ -23,19 +23,19 @@ export const GroomAccount: FunctionComponent = () => {
       {groomShow && (
         <div className='text-left divide-y divide-rose-300'>
           <div className='w-full py-4'>
-            <ToastCopy text="123-456-789">
+            <ToastCopy category='계좌번호' text="123-456-789">
               <div className='px-4'>농협 123-456-789</div>
               <div className='px-4'>이규석</div>
             </ToastCopy>
           </div>
           <div className='w-full py-4'>
-            <ToastCopy text='16702594010'>
+            <ToastCopy category='계좌번호' text='16702594010'>
               <div className='px-4'>농협 123-456-789</div>
               <div className='px-4'>이해자</div>
             </ToastCopy>
           </div>
           <div className='w-full py-4'>
-            <ToastCopy text='52604454301019'>
+            <ToastCopy category='계좌번호' text='52604454301019'>
               <div className='px-4'>농협 123-456-789</div>
               <div className='px-4'>이봉균</div>
             </ToastCopy>

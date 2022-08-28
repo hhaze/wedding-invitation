@@ -4,7 +4,7 @@ import {toast} from 'react-toastify'
 
 export const ToastCopy: FunctionComponent<Props> = (props) => {
   return (
-    <Copy text={props.text} onCopy={toast}>
+    <Copy text={props.text} onCopy={toast} category={props.category}>
       {props.children}
     </Copy>
   )
@@ -12,4 +12,5 @@ export const ToastCopy: FunctionComponent<Props> = (props) => {
 
 type Props = PropsWithChildren<{
   text: string
+  category: string
 }>

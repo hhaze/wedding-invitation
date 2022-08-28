@@ -5,7 +5,7 @@ import {Banking, Calendar, Location, Photo, Phrase, Title} from '../components'
 
 const BrideParent: NextPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center m-4'>
+    <div className='flex flex-col items-center justify-center gap-20'>
       <Title isBride/>
       <Image src='/flower.jpg' width={120} height={60}/>
       <Phrase isBride/>

@@ -10,9 +10,11 @@ export const Location: FunctionComponent = () => {
       <Image src='/royal_location.png' width={400} height={300}/>
       <div className='text-sm text-left py-2'>
         <div className='font-bold text-lg'>주소</div>
-        <ColoredToastCopy text="서울특별시 중구 명동길 61">서울특별시 중구 명동길 61</ColoredToastCopy>
+        <ColoredToastCopy text='서울특별시 중구 명동길 61' category='주소'>
+          서울특별시 중구 명동길 61
+        </ColoredToastCopy>
         <Border2>
-          <a href="tel:02-756-1112">02-756-1112</a>
+          <a href='tel:02-756-1112'>02-756-1112</a>
         </Border2>
       </div>
       <div className='text-sm text-left py-2'>

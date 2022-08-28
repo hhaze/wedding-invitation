@@ -2,12 +2,12 @@ import {FunctionComponent, PropsWithChildren} from 'react'
 import copy from 'copy-to-clipboard'
 
 export const Copy: FunctionComponent<Props> = (props) => {
-  const {text, onCopy, children} = props
+  const {text, onCopy, category, children} = props
   const click = () => {
     copy(text)
 
     if (onCopy) {
-      onCopy(`계좌번호(${text})가 복사되었습니다.`)
+      onCopy(`${category}(${text})가 복사되었습니다.`)
     }
   }
 
@@ -21,4 +21,5 @@ export const Copy: FunctionComponent<Props> = (props) => {
 type Props = PropsWithChildren<{
   text: string
   onCopy?(text: string): void
+  category: string
 }>

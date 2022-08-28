@@ -1,5 +1,4 @@
 import {FunctionComponent, PropsWithChildren} from "react";
-import {ToastCopy} from "./ToastCopy";
 
 export const Border2: FunctionComponent<Props> = (props) => {
   return (
