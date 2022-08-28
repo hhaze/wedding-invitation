@@ -11,6 +11,7 @@ export const Title: FunctionComponent = () => {
         src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
         width={400}
         height={600}
+        className="rounded-2xl"
       />
       <div className='flex flex-col items-center pt-8 pb-20 text-lg'>
         <span>2022년 09월 24일 토요일 낮 12시</span>

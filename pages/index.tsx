@@ -1,15 +1,15 @@
 import React from 'react'
 import type { NextPage } from 'next'
-import {Title} from '../components/title'
-import {Phrase} from '../components/phrase'
-import {Calendar} from '../components/calendar'
-import {Location} from '../components/location'
-import {Banking} from '../components/banking'
+import {Title} from '../components/Title'
+import {Phrase} from '../components/Phrase'
+import {Calendar} from '../components/Calendar'
+import {Location} from '../components/Location'
+import {Banking} from '../components/Banking'
 import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center m-4'>
+    <div className='flex flex-col items-center justify-center p-4'>
       <Title/>
       <Image src='/flower.jpg' width={120} height={60}/>
       <Phrase/>
