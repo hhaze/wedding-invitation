@@ -5,7 +5,7 @@ import {Border2} from "./Border2";
 
 export const Location: FunctionComponent = () => {
   return (
-    <div className='text-center px-4 py-20'>
+    <div className='text-center px-4'>
       <div className='font-bold text-lg p-4 '>오시는 길</div>
       <Image src='/royal_location.png' width={400} height={300}/>
       <div className='text-sm text-left py-2'>
