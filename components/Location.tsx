@@ -1,16 +1,19 @@
 import React, {FunctionComponent} from 'react'
 import Image from 'next/image'
-import {ToastCopy} from "./ToastCopy";
+import {ColoredToastCopy} from "./ColoredToastCopy";
+import {Border2} from "./Border2";
 
 export const Location: FunctionComponent = () => {
   return (
-    <div className='text-center px-4 py-20'>
+    <div className='text-center px-4'>
       <div className='font-bold text-lg p-4 '>오시는 길</div>
       <Image src='/royal_location.png' width={400} height={300}/>
       <div className='text-sm text-left py-2'>
         <div className='font-bold text-lg'>주소</div>
-        <ToastCopy text="서울특별시 중구 명동길 61">서울특별시 중구 명동길 61</ToastCopy>
-        <a href="tel:02-756-1112">02-756-1112</a>
+        <ColoredToastCopy text="서울특별시 중구 명동길 61">서울특별시 중구 명동길 61</ColoredToastCopy>
+        <Border2>
+          <a href="tel:02-756-1112">02-756-1112</a>
+        </Border2>
       </div>
       <div className='text-sm text-left py-2'>
         <div className='font-bold text-lg'>🚇 지하철</div>

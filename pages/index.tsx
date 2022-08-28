@@ -5,7 +5,7 @@ import {Banking, Calendar, Location, Phrase, Title} from '../components'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center p-4'>
+    <div className='flex flex-col items-center justify-center gap-20'>
       <Title/>
       <Image src='/flower.jpg' width={120} height={60}/>
       <Phrase/>

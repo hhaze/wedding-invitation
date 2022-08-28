@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const Phrase: FunctionComponent<Props> = (props) => {
   return (
-    <div className='py-20'>
+    <div className=''>
       <div className='text-center text-xl text-rose-300 font-bold pb-4'>
         <div>소중한 분들을 초대합니다.</div>
         {props?.isBride !== undefined &&
