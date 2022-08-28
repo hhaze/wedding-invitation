@@ -1,35 +1,62 @@
-import React, {FunctionComponent} from 'react'
+import React, {FunctionComponent, PropsWithChildren} from 'react'
 import Image from 'next/image'
 
-export const Phrase: FunctionComponent = () => {
+export const Phrase: FunctionComponent<Props> = (props) => {
   return (
     <div className='py-20'>
       <div className='text-center text-xl text-rose-300 font-bold pb-4'>
-        소중한 분들을 초대합니다.
+        <div>소중한 분들을 초대합니다.</div>
+        {props?.isBride !== undefined &&
+          <div>자랑스러운 우리 {props.isBride? `딸` : `아들`} 결혼합니다.</div>
+        }
       </div>
       <Image src='/marry.jpg' width={400} height={250}/>
-      {/*<div className='flex flex-col items-center text-base'>*/}
-      {/*  <span>청명한 구월의 좋은 날,</span>*/}
-      {/*  <span>결혼합니다!</span>*/}
-      {/*</div>*/}
-      <div className='pt-4'>
-        <div className='flex justify-center text-lg'>
-          <span className='px-1'>이규석</span>
-          <span className='px-1'>·</span>
-          <span className='px-1'>이해자</span>
-          <span className='px-1 text-sm py-1'>의</span>
-          <span className='px-1 text-sm w-10 py-1'>아들</span>
-          <span className='px-1 font-bold'>봉균</span>
-        </div>
-        <div className='flex justify-center text-lg'>
-          <span className='px-1'>구성종</span>
-          <span className='px-1'>·</span>
-          <span className='px-1'>홍남숙</span>
-          <span className='px-1 text-sm py-1'>의</span>
-          <span className='px-1 text-sm w-10 py-1'>딸</span>
-          <span className='px-1 font-bold'>지혜</span>
-        </div>
-      </div>
+      {props.isBride
+        ? (
+          <div className='pt-4'>
+            <div className='flex justify-center text-lg'>
+              <span className='px-1'>구성종</span>
+              <span className='px-1'>·</span>
+              <span className='px-1'>홍남숙</span>
+              <span className='px-1 text-sm py-1'>의</span>
+              <span className='px-1 text-sm w-10 py-1'>딸</span>
+              <span className='px-1 font-bold'>지혜</span>
+            </div>
+            <div className='flex justify-center text-lg'>
+              <span className='px-1'>이규석</span>
+              <span className='px-1'>·</span>
+              <span className='px-1'>이해자</span>
+              <span className='px-1 text-sm py-1'>의</span>
+              <span className='px-1 text-sm w-10 py-1'>아들</span>
+              <span className='px-1 font-bold'>봉균</span>
+            </div>
+          </div>
+        )
+        : (
+          <div className='pt-4'>
+            <div className='flex justify-center text-lg'>
+              <span className='px-1'>이규석</span>
+              <span className='px-1'>·</span>
+              <span className='px-1'>이해자</span>
+              <span className='px-1 text-sm py-1'>의</span>
+              <span className='px-1 text-sm w-10 py-1'>아들</span>
+              <span className='px-1 font-bold'>봉균</span>
+            </div>
+            <div className='flex justify-center text-lg'>
+              <span className='px-1'>구성종</span>
+              <span className='px-1'>·</span>
+              <span className='px-1'>홍남숙</span>
+              <span className='px-1 text-sm py-1'>의</span>
+              <span className='px-1 text-sm w-10 py-1'>딸</span>
+              <span className='px-1 font-bold'>지혜</span>
+            </div>
+          </div>
+        )
+      }
     </div>
   )
 }
+
+type Props = PropsWithChildren<{
+  isBride?: boolean
+}>

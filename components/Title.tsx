@@ -1,11 +1,14 @@
-import React, {FunctionComponent} from 'react'
+import React, {FunctionComponent, PropsWithChildren} from 'react'
 import Image from 'next/image'
 
-export const Title: FunctionComponent = () => {
+export const Title: FunctionComponent<Props> = (props) => {
   return (
     <>
-      <div className='text-center py-8 text-2xl'>
-        이봉균 | 구지혜
+      <div className='text-center py-8 text-2xl font-bold'>
+        {props?.isBride
+          ? `구지혜 | 이봉균`
+          : `이봉균 | 구지혜`
+        }
       </div>
       <Image
         src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
@@ -20,3 +23,7 @@ export const Title: FunctionComponent = () => {
     </>
   )
 }
+
+type Props = PropsWithChildren<{
+  isBride?: boolean
+}>

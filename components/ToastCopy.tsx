@@ -1,6 +1,6 @@
-import {FunctionComponent, PropsWithChildren} from "react";
-import {Copy} from "./Copy"
-import {toast} from "react-toastify"
+import {FunctionComponent, PropsWithChildren} from 'react'
+import {Copy} from './Copy'
+import {toast} from 'react-toastify'
 
 export const ToastCopy: FunctionComponent<Props> = (props) => {
   return (

@@ -1,4 +1,4 @@
-import {FunctionComponent, PropsWithChildren} from "react";
+import {FunctionComponent, PropsWithChildren} from 'react'
 import copy from 'copy-to-clipboard'
 
 export const Copy: FunctionComponent<Props> = (props) => {
