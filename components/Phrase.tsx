@@ -1,5 +1,6 @@
 import React, {FunctionComponent, PropsWithChildren} from 'react'
 import Image from 'next/image'
+import {subpath} from "../constant";
 
 export const Phrase: FunctionComponent<Props> = (props) => {
   return (
@@ -7,7 +8,7 @@ export const Phrase: FunctionComponent<Props> = (props) => {
       <div className='text-center text-xl text-rose-300 font-bold pb-4'>
         <div>소중한 분들을 초대합니다.</div>
       </div>
-      <Image src='marry.jpg' width={400} height={250}/>
+      <Image src={`${subpath}/marry.jpg`} width={400} height={250}/>
       {props.isBride
         ? (
           <div className='pt-4'>

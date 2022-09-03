@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com'],
   },
+  basePath: '/wedding-invitation'
 }
 
 module.exports = nextConfig
